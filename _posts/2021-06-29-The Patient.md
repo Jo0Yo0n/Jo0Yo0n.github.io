@@ -3,6 +3,7 @@ layout: post
 sidebar: []
 title: 그 환자
 tags: [책]
+categories: [책]
 date: 2021-06-29
 last_modified_at: 2022-07-12
 ---
