@@ -2,10 +2,9 @@
 layout: post
 sidebar: []
 title: "Jekyll을 이용한 GitHub Blog 호스팅"
-categories: [Blog]
 tags: [Blog, Jekyll, Github, Git]
+categories: [Blog]
 comments: true
-
 date: 2022-07-10
 last_modified_at: 2022-07-10
 ---

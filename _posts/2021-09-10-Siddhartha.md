@@ -4,6 +4,7 @@ sidebar: []
 title: 싯다르타
 tags: [책]
 categories: [책]
+comments: true
 date: 2021-09-10
 last_modified_at: 2022-07-12
 ---

@@ -4,6 +4,7 @@ sidebar: []
 title: 오! 한강
 tags: [책]
 categories: [책]
+comments: true
 date: 2021-08-01
 last_modified_at: 2022-07-12
 ---
