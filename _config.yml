@@ -35,9 +35,6 @@ analytics:
     tracking_id: "G-L3ZXQY8RVW"
     anonymize_ip: # true, false (default)
     
-- name: Jekyll Deploy Action
-  uses: jeffreytse/jekyll-deploy-action@v0.4.0
-
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
