@@ -34,6 +34,7 @@ analytics:
   google:
     tracking_id: "G-L3ZXQY8RVW"
     anonymize_ip: # true, false (default)
+    
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
