@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Home | Nevertheless</title>
+<meta name="generator" content="Jekyll v4.2.2">
+<meta property="og:title" content="Home">
+<meta name="author" content="Jo0Yo0n">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="CS &amp; 개발 정리 블로그">
+<meta property="og:description" content="CS &amp; 개발 정리 블로그">
+<link rel="canonical" href="https://jo0yo0n.github.io/jekyll-theme-yat/">
+<meta property="og:url" content="https://jo0yo0n.github.io/jekyll-theme-yat/">
+<meta property="og:site_name" content="Nevertheless">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Home">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Jo0Yo0n"},"description":"CS &amp; 개발 정리 블로그","headline":"Home","name":"Nevertheless","url":"https://jo0yo0n.github.io/jekyll-theme-yat/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/jekyll-theme-yat/assets/css/main.css">
+  <script src="/jekyll-theme-yat/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://jo0yo0n.github.io/jekyll-theme-yat/feed.xml" title="Nevertheless">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/jekyll-theme-yat/">
+  <img class="site-favicon" title="Nevertheless" src="" onerror="this.style.display='none'">
+  Nevertheless
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/jekyll-theme-yat/archives.html">ARCHIVES</a><a class="page-link" href="/jekyll-theme-yat/categories.html">CATEGORIES</a><a class="page-link" href="/jekyll-theme-yat/">HOME</a><a class="page-link" href="/jekyll-theme-yat/tags.html">TAGS</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page-banner">
+    <div class="page-banner-img">
+<div style="background-image: url(/jekyll-theme-yat/assets/images/banners/1920x1080-celadon-green-solid-color-background.jpg)"></div>
+        <img class="img-placeholder" src="/jekyll-theme-yat/assets/images/banners/1920x1080-celadon-green-solid-color-background.jpg">
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner"><div class="page-banner-default">
+            <h1 class="page-banner-heading">
+              Nevertheless
+            </h1>
+            <h2 class="page-banner-subheading">
+              CS &amp; 개발 정리 블로그
+            </h2>
+          </div></div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('manual' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="articles">
+  
+
+  
+
+
+  <div class="pagination">
+  <!-- Post list links -->
+  <ul class="post-list">
+<li> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/MBMFY/">
+          &lt;당신의 가장 찬란한 순간&gt; 전시 후기
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 17, 2022</span>
+        <!-- 읽기 소요시간 삭제
+            <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+        -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/MBMFY/">
+        <p>
+
+
+  이 전시는 관람객이 우리의 일상이 된 ‘온라인 위의 삶’을 작가들의 작품을 통해 ‘마주침’으로써 쾌락의 정점을 모른 채 욕망을 향해 달려가는 우리의 시간이 과연 ‘당신의 가장 찬란한 순간’이 될 수 있는지 역설적으로 질문하고자 한다.
+“당신의 가장 찬란한 순간 설명 페이지”
+
+
+경기도 미술관에 괜찮은 전시를 찾던 중 해당 설명이 마음에 들어 전시 관람을 하기로 했다. 마침 도착 예정 시각과 도슨팅 시각이 얼추 맞아서 처음으로 도슨트의 설명을 들으며 관람했다.
+
+이번이 내가 관람하는 3번째 전시이다. 그 전의 전시들은 친구와 함께 갔지만, 이번 전시는 혼자 갔다. 전시에 집중하기에는 혼자서 관람하는 것이 더... <span class="read_more">Read More</span></p>
+      </a>
+      <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%A0%84%EC%8B%9C">#전시</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EB%AF%B8%EC%88%A0">#미술</a>
+</div>
+    </li>
+<li> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2022/07/14/update-blog.html">
+          2022년 7월 14일 블로그 수정
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 14, 2022</span>
+        <!-- 읽기 소요시간 삭제
+            <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+        -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2022/07/14/update-blog.html">
+        <p>수정사항
+
+
+  
+    disqus를 이용한 댓글기능 추가
+  
+  
+    웹 사이트 검색을 위해 검색엔진에 블로그를 등록
+ _ Google search console
+ _ Naver webmaster
+  
+  
+    웹 분석을 위해 Google Analytics에 블로그를 등록
+  
+  
+    기타 (읽기 소요시간 삭제, 폰트 변경)
+  
+
+
+Google Analytics는 등록되는데 시간이 좀 걸리는 듯.
+ <span class="read_more">Read More</span></p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Blog">#Blog</a></div>
+    </li>
+<li> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2022/07/10/my-first-post.html">
+          Jekyll을 이용한 GitHub Blog 호스팅
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 10, 2022</span>
+        <!-- 읽기 소요시간 삭제
+            <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 2 mins</span>
+        -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2022/07/10/my-first-post.html">
+        <p>
+ 우리 블로그 정상영업합니다…
+
+Ruby로 만들어진 Jekyll을 이용해서 GitHub Pages에 블로그를 호스팅 했습니다. GitHub에서는 각 계정 당 하나의 웹페이지를 호스팅 해준다고 합니다.
+
+개발, 공부 정리 블로그를 만들어야겠다는 생각을 한 지는 꽤 됐었는데, 드디어 만들게 됐네요. 다른 블로그 플랫폼도 있었지만, 굳이 GitHub 블로그를 선택한 이유는 높은 자유도 때문입니다. 이런 높은 자유도 때문에 호스팅을 하는 데 꽤 애를 먹기도 했지만, 하나하나 공부하는 재미도 있을 것 같고, 도움도 많이 될 것 같습니다. 아직은 조악하지만, 꾸준히 정리해 나가겠습니다.
+
+
+
+Jekyll을 이용한 GitHu... <span class="read_more">Read More</span></p>
+      </a>
+      <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Blog">#Blog</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Jekyll">#Jekyll</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Github">#Github</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Git">#Git</a>
+</div>
+    </li>
+<li> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/%EC%B1%85/2021/09/10/Siddhartha.html">
+          싯다르타
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 10, 2021</span>
+        <!-- 읽기 소요시간 삭제
+            <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+        -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/%EC%B1%85/2021/09/10/Siddhartha.html">
+        <p>
+
+
+
+저자: 헤르만 헤세 (Hermann Hesse)
+평점: 4 out of 5
+
+Review
+
+가볍게 읽을 수 있는 책을 찾던 중 헤르만 헤세가 쓴 198쪽의 얇은 책이 눈에 띄었다. 사실 이 책은 대학교 1학년 방학 때 읽기를 시도하다가 실패한 책이다. 독서에 흥미가 떨어지기도 했고, 이 책이 나에게는 잘 읽히지 않았다. 이 책을 다시 읽기로 결정하고 나서 얼마되지 않아 나는 내가 왜 이 책을 읽기를 포기했었는지 다시금 상기할 수 있었다. 꽤나 딱딱한 문체에 잔잔하게 흐르는 서사, 이해하기 어려운 심오한 철학은 내가 원했던 가볍게 읽을 수 있는 책과는 거리가 멀었다. 결국 다른 책을 읽는 데 걸린 시간보다 2... <span class="read_more">Read More</span></p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%B1%85">#책</a></div>
+    </li>
+<li> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/%EC%B1%85/2021/08/22/Cleaning-the-house-of-the-dead.html">
+          죽은 자의 집 청소
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 22, 2021</span>
+        <!-- 읽기 소요시간 삭제
+            <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 2 mins</span>
+        -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/%EC%B1%85/2021/08/22/Cleaning-the-house-of-the-dead.html">
+        <p>
+
+
+
+저자: 김완
+평점: 2 out of 5
+
+Review
+
+‘오늘의 책 선정도서’, ‘출간하자마자 베스트셀러’, ‘서울대 교수의 추천’의 문구는 나의 호기심을 일으키기에 충분하였다. 더군다나 죽음을 통해 삶의 의지와 소중함을 느낄 수 있다는 말에 정말 나도 삶의 의지를 되찾을 수 있을까하는 희망을 품으며 책을 읽기 시작했다. 물론 책을 읽는다는 것만으로 인생이 180도 급변하는 일은 없다는 것을 분명히 알고는 있지만, 늘 그렇듯 현대사회의 마케팅은 단 한 권의 책이 내 인생을 바꿀 수 있을 것만 같은 믿음을 심어준다.
+
+에필로그부터 범상치 않은 이 책은 내가 소설을 읽는 것이 아닌가하는 착각을 할만큼 장대하며 ... <span class="read_more">Read More</span></p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%B1%85">#책</a></div>
+    </li>
+<li> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/%EC%B1%85/2021/08/01/Oh!-Han_River.html">
+          오! 한강
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 01, 2021</span>
+        <!-- 읽기 소요시간 삭제
+            <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+        -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/%EC%B1%85/2021/08/01/Oh!-Han_River.html">
+        <p>
+
+
+
+그림: 허영만, 스토리: 김세영
+평점: 3 out of 5
+
+Review
+
+이강토라는 인물을 중심으로 해방부터 제 5공화국이 끝날 때까지의 한국의 근현대사를 한강의 물 줄기를 따라가듯이 볼 수 있는 만화책이다. 개인이 갖고 있는 역사관은 꽤나 중요하다. 그 사람이 어떠한 판단이나 결정을 내릴 때 역사관은 알게 모르게 영향을 준다. 한 사건을 개인의 견해에 따라 다른 시각으로 볼 수 있는데, 이러한 과정에서 갈등은 시작된다. 한 견해가 옳고 그르냐의 문제보다는 그 견해를 뒷받침하는 근거가 옳은 지가 중요하다. 과거를 날조하고 거짓으로 선동하는 행위는 개인의 견해를 쉽게 교란시킨다. 이러한 행태는 주로 정치권에... <span class="read_more">Read More</span></p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%B1%85">#책</a></div>
+    </li>
+<li> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/%EC%B1%85/2021/06/29/The-Patient.html">
+          그 환자
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jun 29, 2021</span>
+        <!-- 읽기 소요시간 삭제
+            <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+        -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/%EC%B1%85/2021/06/29/The-Patient.html">
+        <p>
+
+
+
+저자: 재스퍼 드윗 (Jasper DeWitt)
+평점: 2 out of 5
+
+Review
+
+(스포일러 주의)
+레딧에 올라온 글을 출판한 소설이다. 나는 영화를 보든, 책을 읽든 무엇을 하든간에 사람들이 미리 매겨놓은 평점을 바탕으로 선택을 하는 편인데, 이 소설을 평이 좋지 않았음에도 불구하고 아는 친구가 읽었기도 하고 분량도 그리 많지 않았기에 가벼운 마음으로 읽어보았다. 인터넷에서 시작된 글이라 그런지 문장은 단순했고 읽기 쉬웠다. 인터넷에 가끔 올라오는 소설들과는 다르게 오글거리는 표현도 없어서 좋았다. 다만 책을 읽기 전 본 리뷰가 책에 선입견을 만들지 않았나 싶다. 읽는 내내 썩 마음에 들지 않았는... <span class="read_more">Read More</span></p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%B1%85">#책</a></div>
+    </li>
+<li> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/%EC%B1%85/2021/06/24/Maus.html">
+          쥐, 한 생존자의 이야기
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jun 24, 2021</span>
+        <!-- 읽기 소요시간 삭제
+            <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+        -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/%EC%B1%85/2021/06/24/Maus.html">
+        <p>
+
+
+
+저자: 아트 슈피겔만 (Art Spiegelman)
+평점: 4 out of 5
+
+Review
+
+2차 세계 대전 당시 아우슈비츠와 그 주변에서 일어난 사건들에 대한 기록에 관한 ‘만화책’이다. 단순히 사건을 이야기 하는 것을 넘어 생존자(아버지)가 작가와 주변 사람에게 미치는 영향까지 담았다. 그 참혹한 현장을 만화의 형식으로 체험하는 것이 글을 통해 체험하는 것보다 더 효과적이었던 것 같다. 아무튼 이 책을 읽으며 느낀 점은 지금 내가 사는 것이 정말 축복받은 삶이고, 내가 가지고 있는 것이 내가 생각하는 것보다 더 많다는 것이다. 우리는 가끔 우리가 가진 것들이 여태껏 있어 왔고 앞으로도 계속 있을 것이라... <span class="read_more">Read More</span></p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%B1%85">#책</a></div>
+    </li>
+</ul>
+
+  <!-- Pagination links -->
+</div>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="common-list">
+  <ul>
+    <li>
+      <a href="/jekyll-theme-yat/index.html">
+        All<span>8</span>
+      </a>
+    </li>
+
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Blog">
+          Blog <span>2</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-etc">
+          etc <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-%EC%B1%85">
+          책 <span>5</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-theme-yat/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Unpublished Work <span class="copyleft">©</span> 2017-2022 Jo0Yo0n</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
