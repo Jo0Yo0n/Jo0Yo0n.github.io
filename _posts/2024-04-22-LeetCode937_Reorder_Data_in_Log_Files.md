@@ -73,9 +73,9 @@ image: /assets/img/algorithm_preview.png
   }
   ```
 
-  * 두 method 모두 list를 정렬하는데 사용된다.
-  * Collections.sort()는 Java 1.2에 소개되었고, List.sort()는 Java 8에 소개 되었다.
-  * Java 8 이후 버전을 쓰고 있다면, 주로 List.sort() 사용이 주로 선호된다.
+* 두 method 모두 list를 정렬하는데 사용된다.
+* Collections.sort()는 Java 1.2에 소개되었고, List.sort()는 Java 8에 소개 되었다.
+* Java 8 이후 버전을 쓰고 있다면, 주로 List.sort() 사용이 주로 선호된다.
   <br>
   -> parameter 전달이 필수가 아니기 때문에 overhead 감소로 performance가 더 좋기 때문이다.
 
@@ -84,6 +84,7 @@ image: /assets/img/algorithm_preview.png
 ```java
 return letterList.toArray(new String[0]);
 ```
+
 * List 컨테이너의 인스턴스를 Array로 만들어 주는 것이 toArray()이다. 하지만 parameter가 조금 헷갈린다.
 * 간단히 말하자면, List 인스턴스의 크기와 parameter로 들어가는 배열 객체의 크기 중 더 큰 크기로 Array로의 전환이 이루어진다.
 * 이 예시에서는 parameter로 들어가는 String 배열의 size가 0이므로, 자연스럽게 letterList의 size로 배열이 만들어 지는 것이다. (String 자료형 Array)
