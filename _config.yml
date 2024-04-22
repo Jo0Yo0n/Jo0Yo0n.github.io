@@ -225,3 +225,6 @@ jekyll-archives:
 
 plugins:
   - jemoji
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-toc
