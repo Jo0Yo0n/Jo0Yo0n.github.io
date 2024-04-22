@@ -1,6 +1,10 @@
 /*
  * The SCSS variables
  */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nanum+Gothic&display=swap');
+</style>
 
 /* sidebar */
 
@@ -29,5 +33,5 @@ $code-icon-width: 1.75rem !default;
 
 /* fonts */
 
-$font-family-base: 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
-$font-family-heading: Lato, 'Microsoft Yahei', sans-serif !default;
+$font-family-base: 'JetBrains Mono', 'Nanum Gothic', 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
+$font-family-heading: 'JetBrains Mono', 'Nanum Gothic', Lato, 'Microsoft Yahei', sans-serif !default;
