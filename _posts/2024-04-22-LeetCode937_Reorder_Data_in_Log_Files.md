@@ -30,6 +30,7 @@ image: /assets/img/algorithm_preview.png
 #### Collections.sort()
   
   -> Collections 클래스의 static method 이다.
+  <br>
   -> List를 implement한 클래스를 정렬할 수 있다. (ArrayList, LinkedList 등)
   
   ```java
