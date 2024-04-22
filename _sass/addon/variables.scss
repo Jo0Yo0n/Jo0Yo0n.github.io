@@ -3,6 +3,7 @@
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 /* sidebar */
 
@@ -32,5 +33,5 @@ $code-icon-width: 1.75rem !default;
 /* fonts */
 
 $font-family-base: 'Nanum Gothic', 'Source Sans Pro', 'Microsoft Yahei',
-  sans-serif !default;
-$font-family-heading: Lato, 'Microsoft Yahei', sans-serif !default;
+  JetBrains Mono !default;
+$font-family-heading: Lato, 'Microsoft Yahei', JetBrains Mono !default;
