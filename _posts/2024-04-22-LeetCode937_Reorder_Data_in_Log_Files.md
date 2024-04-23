@@ -42,6 +42,7 @@ image: /assets/img/algorithm_preview.png
 #### List.sort()
   
   -> List 클래스의 instance method이다.
+  <br>
   -> List의 method이므로 List interface를 implement한 객체에서만 사용할 수 있다.
   
   ```java
